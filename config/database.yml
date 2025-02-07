@@ -9,8 +9,8 @@ default: &default
 
 development:
   <<: *default
-  # url: <%= ENV['DATABASE_URL'] %>
-  url: postgresql://rails_7_baseapi_user:L4UnRcvyQsV7Bg5fAAcD43fhZOFoVH7v@dpg-cuiqnq3qf0us73dstl5g-a.oregon-postgres.render.com/rails_7_baseapi
+  url: <%= ENV['DATABASE_URL'] %>
+  # url: postgresql://rails_7_baseapi_user:L4UnRcvyQsV7Bg5fAAcD43fhZOFoVH7v@dpg-cuiqnq3qf0us73dstl5g-a.oregon-postgres.render.com/rails_7_baseapi
 
 test:
   <<: *default
@@ -20,5 +20,5 @@ test:
 # It will take precedence over the config defined here.
 # https://edgeguides.rubyonrails.org/configuring.html#connection-preference
 production:
-  # url: <%= ENV['DATABASE_URL'] %>
-  url: postgresql://rails_7_baseapi_user:L4UnRcvyQsV7Bg5fAAcD43fhZOFoVH7v@dpg-cuiqnq3qf0us73dstl5g-a.oregon-postgres.render.com/rails_7_baseapi
+  url: <%= ENV['DATABASE_URL'] %>
+  # url: postgresql://rails_7_baseapi_user:L4UnRcvyQsV7Bg5fAAcD43fhZOFoVH7v@dpg-cuiqnq3qf0us73dstl5g-a.oregon-postgres.render.com/rails_7_baseapi
