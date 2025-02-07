@@ -12,7 +12,8 @@ Rswag::Ui.configure do |c|
   c.openapi_endpoint '/api-docs/openapi.yaml', 'API V1 Docs'
 
   # Add Basic Auth in case your API is private
-  c.basic_auth_enabled = true
-  c.basic_auth_credentials ENV.fetch('SWAGGER_USERNAME', 'username'), ENV.fetch('SWAGGER_PASSWORD', 'password')
+  c.basic_auth_enabled = false
+  # c.basic_auth_enabled = true
+  # c.basic_auth_credentials ENV.fetch('SWAGGER_USERNAME', 'username'), ENV.fetch('SWAGGER_PASSWORD', 'password')
 end
 # gcloud compute ssh --zone "us-west1-a" "huannv@ujet-remote-instance-huannv" --project "ujet-remote-dev-env-0"
