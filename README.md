@@ -164,8 +164,8 @@ Rails API Base is maintained by [Rootstrap](http://www.rootstrap.com) with the h
 
 ## Setup
 ```
-rvm install 3.3.1
-rvm use 3.3.1
+rvm install 3.3.6
+rvm use 3.3.6
 bundle install
 rails console
 ```

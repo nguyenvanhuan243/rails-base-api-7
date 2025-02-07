@@ -1,4 +1,4 @@
-FROM ruby:3.3.1
+FROM ruby:3.3.6
 
 RUN apt-get update -qq && \
     apt-get install -y build-essential libssl-dev libpq-dev less vim nano libsasl2-dev
